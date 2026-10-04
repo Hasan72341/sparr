@@ -32,7 +32,7 @@ This is a local self-practice policy, not a tamper-proof assessment. The owner/a
 
 SQLite files use restrictive local permissions; newly created data directories are private. Choose a dedicated directory if overriding the data location, because existing directory permissions are preserved. Disk encryption is supplied by the operating system, not this application. Export omits secrets. Delete-all removes database records and imported repositories; this is logical deletion, not guaranteed forensic erasure from SSDs or backups. Browser draft recovery uses localStorage when available and is removed when sessions/data are deleted through the interface.
 
-The guardian is built with an ad-hoc local signature, not a signed/notarized release package. Physical permission, capture, hot-plug, sleep/wake, and recovery behavior needs a supported-Mac test matrix. No claim of comprehensive VM or virtual-device detection is made. Private repository integration, arbitrary application startup, and Windows support remain future work.
+The maintainer reports a physical-device validation pass. The guardian uses an ad-hoc local signature; signed/notarized packaging remains release work. Further compatibility runs should record permission, capture, hot-plug, sleep/wake, and recovery behavior across supported Macs. No claim of comprehensive VM or virtual-device detection is made. Private repository integration, arbitrary application startup, and Windows support remain future work.
 
 ## Generated SEB practice links
 

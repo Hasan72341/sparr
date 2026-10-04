@@ -14,7 +14,13 @@ A second prompt fix excludes canned Guided judgments from the model input while 
 
 The [remote macOS verification run](https://github.com/Hasan72341/sparr/actions/runs/37232628940) passed for source commit `0ba5a0a` on the `macos-15` runner with Node 24 and Python 3.12. It covers clean dependency installation, typecheck, all unit/integration tests, production build, native build/self-checks, Chromium and WebKit journeys, and dependency audit. The first remote run exposed a test that used a development-machine home path; the fixed test creates and cleans up its own synthetic host file and requires permission denial from both Python and JavaScript.
 
-The earlier checks below remain dated to their original runs. No new physical-device validation or notarization is implied by the provider/template changes.
+The earlier checks below remain dated to their original runs. The maintainer's physical-device result is recorded separately below.
+
+## Physical-device validation
+
+On **5 October 2026**, the maintainer reported that physical-device validation **passed**. Device and software versions, per-scenario results, and logs were not included in that report. This records the maintainer's result separately from the automated and VM checks; broader compatibility coverage remains in [the roadmap](roadmap.md).
+
+## Local environment: 4 October 2026
 
 Local checks were run on **4 October 2026**, on Apple silicon with macOS 26.6.1, Node 26.7, Python 3.14, and Swift 6.3.3. This is the tested environment, not a compatibility matrix for all Macs.
 
@@ -88,7 +94,7 @@ The lab uses synthetic clean native observations for admission and permits the V
 
 ## Untested or incomplete
 
-- Physical additional-camera/display hot-plug, live face/audio processing, prohibited-process handling, and recovery under the production SEB policy. Controller and native lifecycle fixtures cover their decisions; they do not establish a physical-hardware pass.
+- Broader physical-device compatibility and recorded scenario coverage beyond the maintainer-reported pass. Record additional-camera/display hot-plug, face/audio processing, prohibited-process handling, and recovery results with their hardware and software versions.
 - Signed/notarized distribution and support across macOS/hardware/SEB combinations.
 - Codex isolation. Ollama has the live-model check described above; other model sizes and hosted compatible providers remain unverified. Adapter fixture tests do not establish their quality or compatibility.
 - Private repositories, arbitrary dependency installation/application startup, notebook execution, and spreadsheet recalculation.

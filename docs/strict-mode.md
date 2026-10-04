@@ -2,7 +2,7 @@
 
 Strict mode enforces a local interview policy using SEB, Sparr's Node server, and Sparr Guardian on the same Mac. It is intended for self-practice. The machine's owner and administrator are outside the tamper boundary: they can modify the code, stored results, native helper, or OS. This is not a hosted or remotely attested examination service.
 
-The implementation is available as a local source build. It is not a notarized distribution. Automated policy tests and the existing VM lab do not establish physical camera, hot-plug, permission, or recovery behavior on every Mac. See [Verification](verification.md) for completed checks and remaining hardware validation.
+The implementation is available as a local source build. The maintainer reports that physical-device validation passed. The build is not notarized, and broader device/version coverage remains release work. See [Verification](verification.md#physical-device-validation) for the reported result and the separate automated and VM evidence.
 
 ## Starting a strict interview
 

@@ -162,7 +162,7 @@ Practice links last 30 minutes and expire on server restart or data deletion. Ke
 
 After consent, the guardian checks devices, capture, face count, prohibited applications, and the signed SEB process. A policy violation ends the attempt, retains saved work and the reason, and requests SEB exit. The configured provider continues through the background server. Camera and microphone samples stay in memory on the Mac; they are not recorded or sent to the model.
 
-Strict mode is a local self-practice policy. It does not prove cheating or prevent the machine's owner from modifying the application. The helper is an ad-hoc build, and physical capture/hot-plug/recovery validation remains outstanding. See [policy and limits](docs/strict-mode.md), [verification](docs/verification.md), and the [existing-VM lab](docs/seb-vm-lab.md).
+Strict mode is a local self-practice policy. It does not prove cheating or prevent the machine's owner from modifying the application. The maintainer reports that physical-device validation passed. The helper remains an ad-hoc build; broader device/version coverage and notarized distribution are tracked in the verification record. See [policy and limits](docs/strict-mode.md), [verification](docs/verification.md), and the [existing-VM lab](docs/seb-vm-lab.md).
 
 ## Data and configuration
 

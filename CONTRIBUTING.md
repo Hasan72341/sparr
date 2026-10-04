@@ -53,7 +53,7 @@ Provider responses must pass schema validation. A provider may add feedback and 
 
 ## Platform work
 
-macOS is the current target; Windows support follows later. Keep Windows work behind a separate platform implementation and document which checks were actually run. Strict SEB admission, monitoring, interruption handling, and exit are implemented. Physical capture, hot-plug, and recovery validation remain outstanding. The VM lab tests integration with synthetic admission observations; it does not establish physical-hardware enforcement. See [the verification record](docs/verification.md) before making compatibility claims.
+macOS is the current target; Windows support follows later. Keep Windows work behind a separate platform implementation and document which checks were actually run. Strict SEB admission, monitoring, interruption handling, and exit are implemented. The maintainer reports a physical-device validation pass. For further compatibility runs, record the Mac, macOS and SEB versions, devices, and scenarios exercised. The VM lab tests integration with synthetic admission observations; it does not establish physical-hardware enforcement. See [the verification record](docs/verification.md) before making compatibility claims.
 
 ## Useful contributions
 

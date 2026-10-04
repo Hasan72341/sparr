@@ -4,14 +4,14 @@ The local application includes regular practice and a strict macOS policy with n
 
 ## macOS strict sessions
 
-The implementation now includes consent/preflight, Config Key consistency checks, binding to an officially signed SEB process and its launch time, ongoing native/browser liveness, device/process policy, face-count grace periods, invalidation, and exit. These release-validation tasks remain:
+The implementation now includes consent/preflight, Config Key consistency checks, binding to an officially signed SEB process and its launch time, ongoing native/browser liveness, device/process policy, face-count grace periods, invalidation, and exit. The maintainer reported a physical-device validation pass on 5 October 2026; see [the verification record](verification.md#physical-device-validation). The remaining work covers broader compatibility, recorded scenario results, and distribution:
 
 | Work | Completion criterion |
 | --- | --- |
-| Physical device matrix | Exercise real capture, camera/display hot-plug, mirroring/Sidecar, Continuity/virtual cameras, lighting, and multiple/no-face transitions on supported Macs. Record observed timing and false terminations. |
+| Additional Mac/device coverage | Record hardware, macOS/SEB versions, and results for capture, camera/display hot-plug, mirroring/Sidecar, Continuity/virtual cameras, lighting, and face-count transitions across supported configurations. Include timing and false terminations. |
 | Permissions and recovery | Validate first consent, revoked TCC permissions, unavailable devices, sleep/wake, guardian/server crashes, and Command-Q recovery on each supported OS version. |
 | VM and process coverage | Maintain the known signal/application list and verify rejection paths. State unsupported detection explicitly; do not claim comprehensive VM or recorder detection. |
-| Background provider operation | Exercise the complete strict policy with supported terminal launchers and providers on physical Macs, while candidate code remains sandboxed. |
+| Background provider compatibility | Record launcher/provider combinations and repeat strict sessions on additional Macs, while candidate code remains sandboxed. |
 | Exit and storage failures | Verify signature-bound exit and recovery with physical SEB sessions, including slow OS APIs and local disk failures. Preserve the distinction between blocked work and events successfully written to disk. |
 | Distribution | Ship a signed and notarized package with installation, update, removal, and recovery instructions. |
 
