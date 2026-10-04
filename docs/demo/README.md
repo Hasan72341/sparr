@@ -1,6 +1,8 @@
 # Recorded demo
 
-[Watch Sparr (MP4)](sparr.mp4)
+[Watch in the browser](https://hasan72341.github.io/sparr/demo/) · [Direct MP4](https://hasan72341.github.io/sparr/demo/sparr.mp4)
+
+[![Play the Sparr walkthrough](../screenshots/overview.png)](https://hasan72341.github.io/sparr/demo/)
 
 Silent browser recording from 5 October 2026, using synthetic candidate data and real local inference with Qwen2.5 7B through Ollama 0.35.1. The recording shows the macOS web application; it does not demonstrate native SEB lockdown.
 

@@ -61,7 +61,7 @@ Early feedback from the friend has been positive. The focus is on useful practic
 
 ## See it in use
 
-[Watch the recorded walkthrough](docs/demo/sparr.mp4) · [Demo transcript](docs/demo/README.md)
+[Watch in the browser](https://hasan72341.github.io/sparr/demo/) · [Demo transcript](docs/demo/README.md)
 
 <details>
 <summary><strong>Company preparation and local AI</strong></summary>
