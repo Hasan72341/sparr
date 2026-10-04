@@ -12,6 +12,8 @@ Ollama ran on loopback with `OLLAMA_NO_CLOUD=1`; its log confirmed cloud feature
 
 A second prompt fix excludes canned Guided judgments from the model input while preserving a trusted instruction for follow-up scenarios. Provider-contract and controller-integration tests verify that the original answer is not regraded against a changed assumption. A discussion-feedback regression also ensures a successful model response no longer tells the candidate to connect a model. The browser demo uses the real 7B model for coding and a financial-model discussion, with synthetic candidate data.
 
+The [remote macOS verification run](https://github.com/Hasan72341/sparr/actions/runs/37232628940) passed for source commit `0ba5a0a` on the `macos-15` runner with Node 24 and Python 3.12. It covers clean dependency installation, typecheck, all unit/integration tests, production build, native build/self-checks, Chromium and WebKit journeys, and dependency audit. The first remote run exposed a test that used a development-machine home path; the fixed test creates and cleans up its own synthetic host file and requires permission denial from both Python and JavaScript.
+
 The earlier checks below remain dated to their original runs. No new physical-device validation or notarization is implied by the provider/template changes.
 
 Local checks were run on **4 October 2026**, on Apple silicon with macOS 26.6.1, Node 26.7, Python 3.14, and Swift 6.3.3. This is the tested environment, not a compatibility matrix for all Macs.
@@ -33,7 +35,7 @@ Parser tests use PDF, DOCX, XLSX, CSV, and notebook fixtures. Browser tests cove
 
 SEB backend checks cover nested gzip/plist encoding, practice-only input, localhost URL validation, cross-origin rejection, forwarding-header isolation, expiry, bounded handoff storage, deletion, and restart invalidation. The generated profile explicitly deactivates SEB’s preset restrictions on Terminal and iTerm2 so the local server can stay running. An empty prohibited-app array does not remove SEB’s presets.
 
-The repository includes a macOS GitHub Actions workflow. Its remote run has not been verified in this workspace.
+At the time of the 4 October local checks, the remote GitHub Actions run had not yet been verified. The 5 October update above records the successful remote run.
 
 ## Local application checks
 

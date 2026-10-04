@@ -1,5 +1,7 @@
 # Sparr
 
+[![Verify macOS application](https://github.com/Hasan72341/sparr/actions/workflows/verify.yml/badge.svg)](https://github.com/Hasan72341/sparr/actions/workflows/verify.yml)
+
 **Interview practice around your resume, projects, and the role you want.**
 
 Sparr is for a friend preparing for campus placements at Trilogy, Assurant, and Joveo: solving a coding problem is one part of the interview; explaining a project, defending an assumption, or working through a finance case needs practice too. It brings those sessions into one local workspace, with executable checks, optional AI feedback, and a history to revisit.
@@ -189,7 +191,7 @@ npx playwright install chromium webkit
 npm run test:e2e     # Isolated browser workspaces
 ```
 
-Latest checks on **5 October 2026**: 102 unit/integration tests, 44 browser tests across Chromium and WebKit, build, typecheck, and the live local-model check passed. The earlier native run passed 54 self-checks. Live Claude Code and real SEB launch/exit flows were also exercised; strict lab admission used synthetic native observations. [Verification](docs/verification.md) records the environments and remaining hardware checks.
+Latest checks on **5 October 2026**: 102 unit/integration tests, 44 browser tests across Chromium and WebKit, build, typecheck, and the live local-model check passed. The [GitHub macOS run](https://github.com/Hasan72341/sparr/actions/runs/37232628940) also passed, including the native guardian checks. Live Claude Code and real SEB launch/exit flows were also exercised; strict lab admission used synthetic native observations. [Verification](docs/verification.md) records the environments and remaining hardware checks.
 
 Useful contributions include question edge cases, finance/quant explanations, parser fixtures, accessible interaction, and reproducible local-model checks. See [Contributing](CONTRIBUTING.md) for setup, test isolation, and question requirements. Please use synthetic candidate data.
 
