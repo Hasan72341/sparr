@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.data/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+.DS_Store
+.superpowers/
+native/macos/.build/
+
+# Local challenge research, submission drafts, and publishing notes.
+/docs/hacktoberfest.md
+/.challenge/
